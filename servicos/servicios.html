@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mar y Tierra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Color de fondo diferente al navbar */
+        }
+
+        /* Estilo general de la barra de navegación */
+        .navbar {
+            background-color: #FFF8DC;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Contenedor para alinear el título y el menú de la derecha */
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px; /* Ajustar al tamaño deseado */
+            align-items: center;
+        }
+
+        /* Sección del título centrado verticalmente */
+        .navbar h1 {
+            font-family: 'Inika', serif;
+            font-size: 50px;
+            color: black;
+            margin: 0;
+            text-align: center;
+            flex: 1; /* Permite que el título ocupe el espacio restante */
+        }
+
+        /* Menú de la derecha */
+        .right-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        .right-menu a {
+            font-family: 'Jacques Francois', serif;
+            font-weight: bold; /* Botones en negritas */
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Efecto hover para los botones de la derecha */
+        .right-menu a:hover {
+            background-color: black;
+            color: #FFF8DC;
+        }
+
+        /* Separador entre la barra de navegación y el menú principal */
+        .divider {
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            margin: 20px 0;
+        }
+
+        /* Segunda sección: Menú principal */
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px; /* Mayor espacio entre los botones */
+            margin: 20px 0;
+        }
+
+        .nav-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px; /* Espacio entre los botones */
+        }
+
+        .nav-menu ul li a {
+            font-family: 'Jacques Francois', serif;
+            font-weight: bold; /* Botones en negritas */
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .nav-menu ul li a:hover {
+            background-color: black;
+            color: #FFF8DC;
+        }
+
+        /* Botón especial para "Reservar" */
+        .nav-menu ul li a.reservar {
+            background-color: #B8860B;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 30px;
+        }
+
+        .nav-menu ul li a.reservar:hover {
+            background-color: #FFF8DC;
+            color: #B8860B;
+            border: 2px solid #B8860B;
+        }
+
+        /* Estilo del contenedor de servicios */
+        .servicios-container {
+            padding: 20px;
+           text-align: center;
+        }
+
+        .servicios-container h2 {
+            font-family: 'Inika', serif;
+            font-size: 36px;
+            color: black;
+            margin: 0 0 20px;
+        }
+        .card {
+         border-radius: 15px; /* Cambia el valor para ajustar el redondeo */
+         
+        }
+
+        .card-img-top {
+        
+        border-top-left-radius: 15px; /* Para redondear las esquinas superiores de la imagen */
+        border-top-right-radius: 15px; /* Para redondear las esquinas superiores de la imagen */
+        }
+        .card title{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .card text{}
+
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <!-- Contenedor para alinear el título y el menú de la derecha -->
+        <div class="navbar-content">
+            <!-- Primera sección: Nombre del hotel -->
+            <h1>Hotel Mar y Tierra</h1>
+
+            <!-- Menú de la derecha (Inicie Sesión y Nosotros) -->
+            <div class="right-menu">
+                <a href="#">Inicie Sesión</a>
+                <a href="#">Nosotros</a>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="divider"></div>
+
+        <!-- Segunda sección: Menú principal -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Habitaciones</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#" class="reservar">Reservar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Seccion de servicios-->
+    <div class="servicios-container">
+        <h2>SERVICIOS</h2>
+        <div class="img">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/spa.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> <p><strong>Relájate y Renueva tu Energía en Nuestro Spa</strong></p></h5>
+                      <p class="card-text">Escápate del estrés cotidiano y sumérgete en un oasis de tranquilidad en nuestro exclusivo spa.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/caballo.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><p><strong>Descubre la Naturaleza a Caballo</strong></p></h5>
+                      <p class="card-text">Embárcate en una aventura inolvidable mientras exploras paisajes impresionantes a lomos de un majestuoso caballo.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/temazcal.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><p><strong>Renueva tu Cuerpo y Espíritu en Nuestro Temazcal</strong></p></h5>
+                      <p class="card-text">Sumérgete en una experiencia ancestral que purifica tu cuerpo y revitaliza tu alma. Nuestro temazcal, guiado por expertos, te llevará a través de un ritual de vapor natural que libera toxinas, reduce el estrés y promueve una profunda conexión con la naturaleza y contigo mismo. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/sendero.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><p><strong>Explora la Naturaleza con Nuestros Rutas de Senderismo</strong></p></h5>
+                      <p class="card-text">Atrévete a descubrir paisajes impresionantes mientras recorres nuestras rutas de senderismo, diseñadas para todos los niveles de aventura.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+</body>
+</html>
